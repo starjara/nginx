@@ -9,6 +9,9 @@
 #include <ngx_core.h>
 #include <nginx.h>
 
+#include <sys/types.h>
+#include <pwd.h>
+
 
 static void ngx_show_version_info(void);
 static ngx_int_t ngx_add_inherited_sockets(ngx_cycle_t *cycle);

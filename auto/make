@@ -12,7 +12,8 @@ mkdir -p $NGX_OBJS/src/core $NGX_OBJS/src/event $NGX_OBJS/src/event/modules \
          $NGX_OBJS/src/http/modules $NGX_OBJS/src/http/modules/perl \
          $NGX_OBJS/src/mail \
          $NGX_OBJS/src/stream \
-         $NGX_OBJS/src/misc
+         $NGX_OBJS/src/misc \
+         $NGX_OBJS/src/libatomic_ops
 
 
 ngx_objs_dir=$NGX_OBJS$ngx_regex_dirsep
@@ -21,10 +22,10 @@ ngx_use_pch=`echo $NGX_USE_PCH | sed -e "s/\//$ngx_regex_dirsep/g"`
 
 cat << END                                                     > $NGX_MAKEFILE
 
-CC =	$CC
-CFLAGS = $CFLAGS
-CPP =	$CPP
-LINK =	$LINK
+CC =	$CC 
+CFLAGS = $CFLAGS 
+CPP =	$CPP 
+LINK =	$LINK 
 
 END
 

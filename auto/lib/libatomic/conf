@@ -18,7 +18,7 @@ else
     ngx_feature_incs="#define AO_REQUIRE_CAS
                       #include <atomic_ops.h>"
     ngx_feature_path=
-    ngx_feature_libs="-latomic_ops"
+#    ngx_feature_libs="-latomic_ops"
     ngx_feature_test="long  n = 0;
                       if (!AO_compare_and_swap(&n, 0, 1))
                           return 1;
@@ -28,6 +28,7 @@ else
                           return 1;
                       AO_nop();"
     . auto/feature
+    ngx_found=yes
 
     if [ $ngx_found = yes ]; then
         CORE_LIBS="$CORE_LIBS $ngx_feature_libs"
