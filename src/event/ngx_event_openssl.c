@@ -9,7 +9,6 @@
 #include <ngx_core.h>
 #include <ngx_event.h>
 
-
 #define NGX_SSL_PASSWORD_BUFFER_SIZE  4096
 
 
@@ -3539,6 +3538,7 @@ ngx_ssl_new_session(ngx_ssl_conn_t *ssl_conn, ngx_ssl_session_t *sess)
     ngx_ssl_sess_id_t        *sess_id;
     ngx_ssl_session_cache_t  *cache;
     u_char                    buf[NGX_SSL_MAX_SESSION_SIZE];
+
 
     len = i2d_SSL_SESSION(sess, NULL);
 

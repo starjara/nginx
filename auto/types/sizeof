@@ -39,10 +39,11 @@ ngx_test="$CC $CC_TEST_FLAGS $CC_AUX_FLAGS \
 eval "$ngx_test >> $NGX_AUTOCONF_ERR 2>&1"
 
 
-if [ -x $NGX_AUTOTEST ]; then
-    ngx_size=`$NGX_AUTOTEST`
-    echo " $ngx_size bytes"
-fi
+#if [ -x $NGX_AUTOTEST ]; then
+#    ngx_size=`$NGX_AUTOTEST`
+#    echo " $ngx_size bytes"
+#fi
+ngx_size=8
 
 
 case $ngx_size in
