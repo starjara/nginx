@@ -9,7 +9,7 @@ checking for gcc -pipe switch
 
 
 ----------------------------------------
-checking for --with-ld-opt="-lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a"
+checking for --with-ld-opt="-lpthread"
 
 
 ----------------------------------------
@@ -19,17 +19,17 @@ checking for -Wl,-E switch
 ----------------------------------------
 checking for gcc builtin atomic operations
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for C99 variadic macros
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for gcc variadic macros
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for gcc builtin 64 bit byteswap
@@ -86,7 +86,7 @@ checking for crypt.h
 ----------------------------------------
 checking for epoll
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for O_PATH
@@ -95,12 +95,12 @@ checking for O_PATH
 ----------------------------------------
 checking for sendfile()
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for sendfile64()
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for sys/prctl.h
@@ -109,12 +109,12 @@ checking for sys/prctl.h
 ----------------------------------------
 checking for prctl(PR_SET_DUMPABLE)
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for prctl(PR_SET_KEEPCAPS)
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for capabilities
@@ -138,7 +138,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a -lcrypt
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread -lcrypt
 ----------
 
 ----------------------------------------
@@ -174,7 +174,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -196,13 +196,13 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
 checking for crypt()
 
-/home/jara/Desktop/RISC-V/toolchains/lib/gcc/riscv64-unknown-linux-gnu/13.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccEMsUTZ.o: in function `main':
+/home/jara/Desktop/RISC-V/toolchains/lib/gcc/riscv64-unknown-linux-gnu/13.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccCQMF9c.o: in function `main':
 autotest.c:(.text+0x14): undefined reference to `crypt'
 collect2: error: ld returned 1 exit status
 ----------
@@ -217,7 +217,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -237,7 +237,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a -lcrypt
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread -lcrypt
 ----------
 
 ----------------------------------------
@@ -260,7 +260,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -291,7 +291,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -318,7 +318,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -361,7 +361,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -389,7 +389,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -412,7 +412,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -440,7 +440,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -469,7 +469,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -493,7 +493,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -603,7 +603,7 @@ objs/autotest.c: In function 'main':
 objs/autotest.c:7:5: warning: implicit declaration of function 'setproctitle' [-Wimplicit-function-declaration]
     7 |     setproctitle("test");;
       |     ^~~~~~~~~~~~
-/home/jara/Desktop/RISC-V/toolchains/lib/gcc/riscv64-unknown-linux-gnu/13.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccrRCMnW.o: in function `main':
+/home/jara/Desktop/RISC-V/toolchains/lib/gcc/riscv64-unknown-linux-gnu/13.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccMQB59K.o: in function `main':
 autotest.c:(.text+0xe): undefined reference to `setproctitle'
 collect2: error: ld returned 1 exit status
 ----------
@@ -618,7 +618,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -660,32 +660,32 @@ checking for memalign()
 ----------------------------------------
 checking for mmap(MAP_ANON|MAP_SHARED)
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for mmap("/dev/zero", MAP_SHARED)
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for System V shared memory
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for POSIX semaphores
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for POSIX semaphores in libpthread
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for POSIX semaphores in librt
 
-/lib/ld-linux-riscv64-lp64d.so.1: No such file or directory
+riscv64-binfmt-P: Could not open '/lib/ld-linux-riscv64-lp64d.so.1': No such file or directory
 
 ----------------------------------------
 checking for struct msghdr.msg_control
@@ -729,7 +729,7 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------
 
 ----------------------------------------
@@ -755,7 +755,7 @@ checking for getaddrinfo()
 ----------------------------------------
 checking for atomic_ops library
 
-/home/jara/Desktop/RISC-V/toolchains/lib/gcc/riscv64-unknown-linux-gnu/13.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccPjkLwB.o: in function `AO_fetch_compare_and_swap_full':
+/home/jara/Desktop/RISC-V/toolchains/lib/gcc/riscv64-unknown-linux-gnu/13.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccWUq19s.o: in function `AO_fetch_compare_and_swap_full':
 autotest.c:(.text+0x14): undefined reference to `AO_pt_lock'
 /home/jara/Desktop/RISC-V/toolchains/lib/gcc/riscv64-unknown-linux-gnu/13.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: autotest.c:(.text+0x18): undefined reference to `AO_pt_lock'
 /home/jara/Desktop/RISC-V/toolchains/lib/gcc/riscv64-unknown-linux-gnu/13.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: autotest.c:(.text+0x40): undefined reference to `AO_pt_lock'
@@ -781,5 +781,5 @@ int main(void) {
 }
 
 ----------
-/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a
+/home/jara/Desktop/RISC-V/toolchains/bin/riscv64-unknown-linux-gnu-gcc -DAO_USE_PTHREAD_DEFS=1 -DNGX_HAVE_MAP_ANON=1 -DNGX_HAVE_LIBATOMIC=1 -DNGX_SYS_NERR=150 -DNGX_CRYPT=0 -DNGX_HAVE_GNU_CRYPT_R=1 -Isrc/libatomic_ops -Wno-deprecated-declarations -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lpthread
 ----------

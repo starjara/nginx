@@ -350,7 +350,7 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/src/http/modules/ngx_http_upstream_keepalive_module.o \
 	objs/src/http/modules/ngx_http_upstream_zone_module.o \
 	objs/ngx_modules.o \
-	-lpthread /home/jara/Desktop/riscv-mini/verselib/libverse.a /home/jara/Desktop/riscv-mini/openssl/.openssl/lib/libssl.a /home/jara/Desktop/riscv-mini/openssl/.openssl/lib/libcrypto.a \
+	-lpthread /home/jara/Desktop/riscv-mini/openssl/.openssl/lib/libssl.a /home/jara/Desktop/riscv-mini/openssl/.openssl/lib/libcrypto.a \
 	-Wl,-E
 	
 
@@ -1200,7 +1200,7 @@ objs/src/http/modules/ngx_http_upstream_zone_module.o:	$(CORE_DEPS) $(HTTP_DEPS)
 /home/jara/Desktop/riscv-mini/openssl/.openssl/include/openssl/ssl.h:	objs/Makefile
 	cd /home/jara/Desktop/riscv-mini/openssl \
 	&& if [ -f Makefile ]; then $(MAKE) clean; fi \
-	&& ./config --prefix=/home/jara/Desktop/riscv-mini/openssl/.openssl no-shared no-threads linux64-riscv64 CC=clang CPPFLAGS=-I/home/jara/Desktop/riscv-mini/verselib CFLAGS=-march=rv64imafdch LDFLAGS=-L/home/jara/Desktop/riscv-mini/verselib LDLIBS=-lverse \
+	&& ./config --prefix=/home/jara/Desktop/riscv-mini/openssl/.openssl no-shared no-threads linux64-riscv64 --cross-compile-prefix=riscv64-unknown-linux-gnu- CPPFLAGS=-I/home/jara/Desktop/riscv-mini/domvlib LDFLAGS=-L/home/jara/Desktop/riscv-mini/domvlib LDLIBS=-ldomv \
 	&& $(MAKE) \
 	&& $(MAKE) install_sw LIBDIR=lib
 
